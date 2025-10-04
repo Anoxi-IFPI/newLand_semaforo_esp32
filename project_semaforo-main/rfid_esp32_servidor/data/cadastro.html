@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="css/cadastro.css">
+  <script src="js/cadastro.js"></script>
+  <title>TaskFlow - Cadastro RFID</title>
+
+</head>
+<body>
+  <div class="botao">
+    <button class="btn-voltar" onclick="window.location.href='inicial.html'">Voltar</button>
+  </div>
+  <div class="wrapper">
+    <div class="logos">
+      <img src="img/raspberry.png" alt="Raspberry Pico">
+      <img src="https://upload.wikimedia.org/wikipedia/en/c/cb/Raspberry_Pi_Logo.svg" alt="Raspberry Logo">
+    </div>
+    <h1>Cadastro de Tag RFID</h1>
+
+    <div class="content">
+      <h2>Registrar Funcionário</h2>
+
+      <!-- <button class="btn" onclick="iniciarCadastro()">Cadastrar Tag</button> -->
+      <button class="btn" id="btnListar" onclick="listarFuncionarios()">Listar Funcionários</button>
+
+      
+      <div id="campoNome">
+        <h3>Cadastrar novo nome do funcionário:</h3>
+        
+        <div class="input-group">
+          <input type="text" id="nome" placeholder="Digite o nome completo">
+          <button id="btnConfirmarNome" onclick="confirmarNome()">Cadastrar</button>
+        </div>
+      </div>
+      
+      <div id="mensagem-rfid" class="mensagem-rfid"></div>
+
+      <p id="mensagem-rfid" style="display: none;"></p>
+    </div>
+  </div>
+
+</body>
+</html>

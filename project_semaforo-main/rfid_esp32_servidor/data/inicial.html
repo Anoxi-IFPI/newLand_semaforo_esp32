@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/inicial.css">
+    <title>TaskFlow - Aproximar Tag</title>
+</head>
+<body>
+    <div class="left-panel">
+        <img src="img/toyota.png" alt="Toyota Logo" class="logo" />
+        <p>Sistema de Monitoramento de Atividades e Manutenção de Veículos.</p>
+        <div>
+            <img src="img/semaforo_def.png" alt="Semáforo" class="main-image" />
+        </div>
+    </div>
+    <div class="right-panel">
+        <div class="form-container">
+            <div class="top-logos">
+                <img src="img/raspberry.png" alt="Raspberry Pico" class="pico-img" />
+                <img src="https://upload.wikimedia.org/wikipedia/en/c/cb/Raspberry_Pi_Logo.svg" alt="Raspberry Logo" class="pi-logo" />
+            </div>
+            <h1>TaskFlow</h1>
+            <label for="tagInput">Identificação</label>
+            <div class="input-and-button">
+                <input type="text" id="tagInput" name="tagInput" placeholder="Aguardando Verificação" readonly />
+                <button class="refresh-btn" onclick="startReading()"><i class="fa-solid fa-rotate-right"></i></button>
+            </div>
+            <div class="buttons">
+                <button class="btn-acessar" id="btnAcessar" onclick="window.location.href='ordens.html'" disabled>Acessar</button>
+                <button class="btn-azul" onclick="window.location.href='cadastro.html'">Cadastrar Tag</button>
+            </div>
+        </div>
+        <div class="partner-logos">
+            <img src="img/IF.png" alt="Instituto Federal" class="partner-logo-img" />
+            <img src="img/toyota.png" alt="Toyota" class="partner-logo-img" />
+            <img src="img/embaraca2.png" alt="Embarcados" class="partner-logo-img" />
+        </div>
+    </div>
+
+    <script src="js/inicial.js"></script>
+</body>
+</html>
